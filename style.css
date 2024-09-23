@@ -114,9 +114,6 @@ button:hover {
     transform: translateY(-3px);
 }
 
-button:active {
-    transform: translateY(0);
-}
 
 .iniciar {
     background-color: rgb(94, 206, 94);
