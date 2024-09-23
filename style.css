@@ -43,15 +43,15 @@ h2{
 }
 
 #card-boo {
-    background-image: url('imgs/mobilidade1.jpg'); /* Substitua com a URL da imagem de mobilidade boa */
+    background-image: url('imgs/mobilidade1.jpg'); /* URL da imagem de mobilidade boa */
 }
 
 #card-media {
-    background-image: url('imgs/mobilidade2.jpg'); /* Substitua com a URL da imagem de mobilidade média */
+    background-image: url('imgs/mobilidade2.jpg'); /* URL da imagem de mobilidade média */
 }
 
 #card-critica {
-    background-image: url('imgs/mobilidade3.jpg'); /* Substitua com a URL da imagem de mobilidade crítica */
+    background-image: url('imgs/mobilidade3.jpg'); /* URL da imagem de mobilidade crítica */
 }
 
 button {
