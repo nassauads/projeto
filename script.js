@@ -28,3 +28,8 @@ document.querySelectorAll('.close-button').forEach(button => {
 function redirecionar(url) {
     window.location.href = url;
 }
+
+// Função para redirecionar o usuário para a página de login
+function redirecionarParaLogin() {
+    window.location.href = 'login.html'; // Substitua 'login.html' pelo caminho correto da sua página de login
+}

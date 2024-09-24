@@ -90,6 +90,9 @@ body {
 }
 
 .VidaFlex {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto verticalmente */
+    position: relative; /* Necessário para posicionar o botão login */
     color: #1d1149;
     margin-bottom: -59px; /* Remove margem inferior adicional */
 }
@@ -136,6 +139,32 @@ button:hover {
     transform: translateY(-3px);
 }
 
+.login-button {
+    position: absolute; /* Posiciona o botão no canto direito */
+    right: 30px; /* Alinha o botão à direita */
+    top: 43%; /* Centraliza o botão verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+    background-color: #058275; /* Cor de fundo do botão */
+    color: #fff; /* Cor do ícone */
+    border: none;
+    border-radius: 50%; /* Torna o botão arredondado */
+    padding: 8px; /* Espaçamento interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s; /* Adiciona uma transição suave para a transformação */
+}
+
+.login-button i {
+    font-size: 16px; /* Tamanho do ícone */
+}
+
+.login-button:hover {
+    background-color: #045f5a; /* Cor do botão ao passar o mouse */
+    transform: translateY(-60%); /* Move o botão suavemente para cima ao passar o mouse */
+}
+
 
 .iniciar {
     background-color: rgb(94, 206, 94);
@@ -174,6 +203,15 @@ button:hover {
 
     .flip-card {
         height: 180px; /* Reduz a altura dos cards em telas menores */
+    }
+
+    .login-button {
+        right: 24px; /* Ajusta a posição para telas menores */
+        padding: 8px; /* Reduz o tamanho do botão */
+    }
+
+    .login-button i {
+        font-size: 14px; /* Diminui o ícone para manter a proporção */
     }
 
     .VidaFlex {
@@ -215,6 +253,16 @@ button:hover {
 
     .flip-card {
         height: 150px; /* Reduz a altura dos cards para dispositivos muito pequenos */
+    }
+
+    .login-button {
+        top: 40%;
+        right: 15px; /* Ajusta a posição para dispositivos muito pequenos */
+        padding: 8px; /* Reduz ainda mais o tamanho do botão */
+    }
+
+    .login-button i {
+        font-size: 12px; /* Diminui o ícone para se ajustar melhor */
     }
 
     .VidaFlex {

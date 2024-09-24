@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" sizes="64x64" >
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" sizes="64x64">
     <title>VidaFlex</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Adicionei o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <div class="card-container">
         <h1 class="VidaFlex" style="display: flex; align-items: center;">
             <img class="logo" src="imgs/logo.png" alt="logo" style="margin-left: 2px;">
             VidaFlex
+            <!-- Botão de login -->
+            <button class="login-button" onclick="redirecionarParaLogin()">
+                <i class="fas fa-sign-in-alt"></i> <!-- Ícone de login -->
+            </button>            
         </h1>      
         <hr>  
         <!-- Card 1: Mobilidade Boa -->
