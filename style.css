@@ -16,6 +16,7 @@ body {
     width: 90%;
     max-width: 500px;
     padding: 20px;
+    padding-bottom: 90px; /* Espaçamento adicional no fundo para melhor visualização do último card */
     cursor: pointer;
 }
 
@@ -80,6 +81,26 @@ body {
     transform: rotateY(180deg);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.VidaFlex {
+    color: #1d1149;
+    margin-bottom: -59px; /* Remove margem inferior adicional */
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    border-top: 3px solid #058275; /* Ajuste a cor e a espessura da linha */
+    width: 92%; /* Largura ajustável do hr */
+    margin: 0 auto; /* Ajusta o espaçamento para aproximar do título */
+    border-radius: 8px; /* Bordas arredondadas para o hr */
+}
+
 
 h2 {
     margin: 0;
@@ -153,17 +174,32 @@ button:hover {
         height: 180px; /* Reduz a altura dos cards em telas menores */
     }
 
+    .VidaFlex {
+        font-size: 28px; 
+        margin-bottom: -52px; /* Ajuste do espaçamento entre o título e o hr */
+    }
+
+    hr {
+        width: 92%; /* Ajusta a largura do hr em telas muito pequenas */
+        margin: 0 auto; /* Mantém o hr centralizado */
+    }
+
+    .logo {
+        width: 20%; 
+        height: 20%;
+    }
+
     h2 {
-        font-size: 1em; /* Ajusta o tamanho do título */
+        font-size: 1em; 
     }
 
     p {
-        font-size: 0.8em; /* Ajusta o tamanho do texto */
+        font-size: 0.8em; 
     }
 
     button {
         padding: 8px 16px; /* Ajusta o tamanho dos botões */
-        font-size: 0.9em; /* Ajusta o tamanho da fonte dos botões */
+        font-size: 0.9em; 
     }
 }
 
@@ -179,16 +215,31 @@ button:hover {
         height: 150px; /* Reduz a altura dos cards para dispositivos muito pequenos */
     }
 
+    .VidaFlex {
+        font-size: 25px; 
+        margin-bottom: -50px; /* Ajuste do espaçamento entre o título e o hr */
+    }
+
+    hr {
+        width: 94%; /* Ajusta a largura do hr em telas muito pequenas */
+        margin: 0 auto; /* Mantém o hr centralizado */
+    }
+
+    .logo {
+        width: 20%; 
+        height: 20%;
+    }
+
     h2 {
-        font-size: 0.9em; /* Ajusta o tamanho do título para telas muito pequenas */
+        font-size: 0.9em; 
     }
 
     p {
-        font-size: 0.8em; /* Ajusta o tamanho do texto descritivo */
+        font-size: 0.8em; 
     }
 
     button {
         padding: 6px 12px; /* Ajusta o tamanho dos botões para dispositivos pequenos */
-        font-size: 0.8em; /* Ajusta o tamanho da fonte dos botões */
+        font-size: 0.8em; 
     }
 }

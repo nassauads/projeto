@@ -24,6 +24,7 @@ document.querySelectorAll('.close-button').forEach(button => {
     });
 });
 
+// Função para redirecionar o usuário para uma nova URL
 function redirecionar(url) {
     window.location.href = url;
 }
