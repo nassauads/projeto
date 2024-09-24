@@ -186,6 +186,17 @@ button:hover {
     transition: opacity 0.3s; /* Transição suave para o aparecimento */
 }
 
+.tooltip-text::after {
+    content: ''; /* Seta que indica o tooltip */
+    position: absolute;
+    top: 100%; /* Posiciona a seta abaixo do tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px; /* Tamanho da seta */
+    border-style: solid;
+    border-color: #069790 transparent transparent transparent; /* Define a cor da seta e torna os lados transparentes */
+}
+
 .login-button:hover .tooltip-text {
     visibility: visible; /* Torna o tooltip visível ao passar o mouse */
     opacity: 1; /* Mostra o tooltip com transição suave */
@@ -244,6 +255,10 @@ button:hover {
         width: 80px; /* Ajusta a largura do tooltip */
         padding: 4px 0; /* Ajusta o padding para telas menores */
         font-size: 12px; /* Ajusta o tamanho da fonte para ser mais legível */
+    }
+    
+    .tooltip-text::after {
+        border-width: 4px; /* Ajusta o tamanho da seta para telas menores */
     }
 
     .VidaFlex {
