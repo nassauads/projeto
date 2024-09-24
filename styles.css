@@ -169,6 +169,27 @@ button:hover {
     transform: translateY(-60%); /* Move o botão suavemente para cima ao passar o mouse */
 }
 
+.tooltip-text {
+    visibility: hidden; /* Tooltip invisível por padrão */
+    width: 100px; /* Largura do tooltip */
+    background-color: #069790; /* Cor de fundo do tooltip */
+    color: #fff; /* Cor do texto do tooltip */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%; /* Posição do tooltip acima do botão */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Invisível inicialmente */
+    transition: opacity 0.3s; /* Transição suave para o aparecimento */
+}
+
+.login-button:hover .tooltip-text {
+    visibility: visible; /* Torna o tooltip visível ao passar o mouse */
+    opacity: 1; /* Mostra o tooltip com transição suave */
+}
 
 .iniciar {
     background-color: rgb(94, 206, 94);
@@ -216,6 +237,12 @@ button:hover {
 
     .login-button i {
         font-size: 14px; /* Diminui o ícone para manter a proporção */
+    }
+
+    .tooltip-text {
+        width: 80px; /* Ajusta a largura do tooltip */
+        padding: 4px 0; /* Ajusta o padding para telas menores */
+        font-size: 12px; /* Ajusta o tamanho da fonte para ser mais legível */
     }
 
     .VidaFlex {
@@ -267,6 +294,13 @@ button:hover {
 
     .login-button i {
         font-size: 12px; /* Diminui o ícone para se ajustar melhor */
+    }
+
+    .tooltip-text {
+        width: 70px; /* Ajusta a largura do tooltip para telas muito pequenas */
+        padding: 3px 0; /* Reduz o padding do tooltip */
+        font-size: 10px; /* Reduz o tamanho da fonte para ajustar melhor */
+        bottom: 140%; /* Ajusta a posição vertical do tooltip para ficar mais próximo */
     }
 
     .VidaFlex {
