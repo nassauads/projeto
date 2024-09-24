@@ -191,6 +191,8 @@ button:hover {
     opacity: 1; /* Mostra o tooltip com transição suave */
 }
 
+/* BOTÃO DE INICIAR EXERCICIO ABAIXO */
+
 .iniciar {
     background-color: rgb(94, 206, 94);
     color: #fff;
