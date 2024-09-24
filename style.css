@@ -271,7 +271,7 @@ button:hover {
     }
 
     hr {
-        width: 94%; /* Ajusta a largura do hr em telas muito pequenas */
+        width: 96%; /* Ajusta a largura do hr em telas muito pequenas */
         margin: 0 auto; /* Mantém o hr centralizado */
     }
 
