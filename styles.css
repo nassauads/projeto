@@ -192,7 +192,6 @@ button:hover {
 }
 
 /* BOTÃO DE INICIAR EXERCICIO ABAIXO */
-
 .iniciar {
     background-color: rgb(94, 206, 94);
     color: #fff;
@@ -299,10 +298,7 @@ button:hover {
     }
 
     .tooltip-text {
-        width: 70px; /* Ajusta a largura do tooltip para telas muito pequenas */
-        padding: 3px 0; /* Reduz o padding do tooltip */
-        font-size: 10px; /* Reduz o tamanho da fonte para ajustar melhor */
-        bottom: 140%; /* Ajusta a posição vertical do tooltip para ficar mais próximo */
+        display: none; /* Esconde o tooltip em telas muito pequenas */
     }
 
     .VidaFlex {
