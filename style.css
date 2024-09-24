@@ -10,6 +10,8 @@ body {
     background-color: #f0f0f0;
 }
 
+/* CARDS DE INICIO */
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -82,6 +84,8 @@ body {
     transform: rotateY(180deg);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* FIM DE CARDS DE INICIO */
 
 .logo {
     width: 20%;
@@ -192,7 +196,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* RESPONSIVIDADE*/
+/* RESPONSIVIDADE DE INICIO */
 @media (max-width: 768px) {
     .card-container {
         gap: 60px; /* Reduz o espaçamento entre os cards em telas menores */
