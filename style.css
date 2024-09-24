@@ -1,3 +1,4 @@
+/* ESTILIZAÇÃO GERAL */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -162,7 +163,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE*/
 @media (max-width: 768px) {
     .card-container {
         gap: 60px; /* Reduz o espaçamento entre os cards em telas menores */
