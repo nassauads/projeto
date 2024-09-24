@@ -1,0 +1,299 @@
+/* ESTILIZAÇÃO GERAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* CARDS DE INICIO */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 70px; /* Espaçamento vertical entre os cards */
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    padding-bottom: 90px; /* Espaçamento adicional no fundo para melhor visualização do último card */
+    cursor: pointer;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Remove distortions */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform-origin: center center; /* Mantém o card no centro ao girar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card.flip .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.flip-card-front {
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-boo {
+    background-image: url('imgs/mobilidade1.jpg'); /* URL da imagem de mobilidade boa */
+}
+
+#card-media {
+    background-image: url('imgs/mobilidade2.jpg'); /* URL da imagem de mobilidade média */
+}
+
+#card-critica {
+    background-image: url('imgs/mobilidade3.jpg'); /* URL da imagem de mobilidade crítica */
+}
+
+.flip-card-back {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* FIM DE CARDS DE INICIO */
+
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.VidaFlex {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto verticalmente */
+    position: relative; /* Necessário para posicionar o botão login */
+    color: #1d1149;
+    margin-bottom: -59px; /* Remove margem inferior adicional */
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    border-top: 3px solid #058275; /* Ajuste a cor e a espessura da linha */
+    width: 92%; /* Largura ajustável do hr */
+    margin: 0 auto; /* Ajusta o espaçamento para aproximar do título */
+    border-radius: 8px; /* Bordas arredondadas para o hr */
+}
+
+
+h2 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-3px);
+}
+
+.login-button {
+    position: absolute; /* Posiciona o botão no canto direito */
+    right: 30px; /* Alinha o botão à direita */
+    top: 43%; /* Centraliza o botão verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+    background-color: #058275; /* Cor de fundo do botão */
+    color: #fff; /* Cor do ícone */
+    border: none;
+    border-radius: 50%; /* Torna o botão arredondado */
+    padding: 10px; /* Espaçamento interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s; /* Adiciona uma transição suave para a transformação */
+}
+
+.login-button i {
+    font-size: 16px; /* Tamanho do ícone */
+}
+
+.login-button:hover {
+    background-color: #045f5a; /* Cor do botão ao passar o mouse */
+    transform: translateY(-60%); /* Move o botão suavemente para cima ao passar o mouse */
+}
+
+
+.iniciar {
+    background-color: rgb(94, 206, 94);
+    color: #fff;
+}
+
+.iniciar:hover {
+    background-color: rgb(67, 153, 67);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 0.308);
+    transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE DE INICIO */
+@media (max-width: 768px) {
+    .card-container {
+        gap: 60px; /* Reduz o espaçamento entre os cards em telas menores */
+        width: 85%;
+        padding: 10px;
+        padding-bottom: 100px; /* Espaçamento adicional no fundo para melhor visualização do último card */
+    }
+
+    .flip-card {
+        height: 180px; /* Reduz a altura dos cards em telas menores */
+    }
+
+    .login-button {
+        right: 24px; /* Ajusta a posição para telas menores */
+        padding: 9px; /* Reduz o tamanho do botão */
+    }
+
+    .login-button i {
+        font-size: 14px; /* Diminui o ícone para manter a proporção */
+    }
+
+    .VidaFlex {
+        font-size: 28px; 
+        margin-bottom: -52px; /* Ajuste do espaçamento entre o título e o hr */
+    }
+
+    hr {
+        width: 92%; /* Ajusta a largura do hr em telas muito pequenas */
+        margin: 0 auto; /* Mantém o hr centralizado */
+    }
+
+    .logo {
+        width: 20%; 
+        height: 20%;
+    }
+
+    h2 {
+        font-size: 1em; 
+    }
+
+    p {
+        font-size: 0.8em; 
+    }
+
+    button {
+        padding: 8px 16px; /* Ajusta o tamanho dos botões */
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        gap: 60px; /* Reduz ainda mais o espaçamento entre os cards */
+        width: 80%;
+        padding: 5px;
+        padding-bottom: 100px; /* Espaçamento adicional no fundo para melhor visualização do último card */
+    }
+
+    .flip-card {
+        height: 150px; /* Reduz a altura dos cards para dispositivos muito pequenos */
+    }
+
+    .login-button {
+        top: 40%;
+        right: 15px; /* Ajusta a posição para dispositivos muito pequenos */
+        padding: 8.5px; /* Reduz ainda mais o tamanho do botão */
+    }
+
+    .login-button i {
+        font-size: 12px; /* Diminui o ícone para se ajustar melhor */
+    }
+
+    .VidaFlex {
+        font-size: 25px; 
+        margin-bottom: -50px; /* Ajuste do espaçamento entre o título e o hr */
+    }
+
+    hr {
+        width: 96%; /* Ajusta a largura do hr em telas muito pequenas */
+        margin: 0 auto; /* Mantém o hr centralizado */
+    }
+
+    .logo {
+        width: 20%; 
+        height: 20%;
+    }
+
+    h2 {
+        font-size: 0.9em; 
+    }
+
+    p {
+        font-size: 0.8em; 
+    }
+
+    button {
+        padding: 6px 12px; /* Ajusta o tamanho dos botões para dispositivos pequenos */
+        font-size: 0.8em; 
+    }
+}
