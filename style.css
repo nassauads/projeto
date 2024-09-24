@@ -152,7 +152,7 @@ button:hover {
     color: #fff; /* Cor do ícone */
     border: none;
     border-radius: 50%; /* Torna o botão arredondado */
-    padding: 8px; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
     display: flex;
     align-items: center;
     justify-content: center;
