@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilidade Boa - VidaFlex</title>
+    <link rel="stylesheet" href="css/exercicios.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionei o Font Awesome para ícones -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="card-container">
+    <div class="exercise-page">
+        <header>
+            <button class="back-button" onclick="voltarParaHome()">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </button>
+            <h1>Mobilidade Boa</h1>
+        </header>
+        <div class="exercises-container">
+            <!-- Card 1: Alongamento de Pernas -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="exercise-card flip-card-front">
+                        <h3 class="exercicio">Exercício 1: Alongamento de Pernas</h3>
+                        <img src="imgs/alongamento-pernas.gif" alt="GIF de Alongamento de Pernas" class="exercise-gif">
+                        <p>Melhore a flexibilidade das suas pernas com este alongamento.</p>
+                        <div class="button-container">
+                            <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                            <select class="time-select">
+                                <option value="16">15 segundos</option>
+                                <option value="31" selected>30 segundos</option>
+                                <option value="46">45 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <button class="close-button" onclick="fecharCard(this)">X</button>
+                        <h3 class="exercicio">Contagem Regressiva</h3>
+                        <div class="timer">00:30</div>
+                        <div class="control-buttons">
+                            <button onclick="pausarTempo()">Pausar</button>
+                            <button onclick="pararTempo()">Parar</button>
+                            <button onclick="reiniciarTempo()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Rotação de Quadril -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="exercise-card flip-card-front">
+                        <h3 class="exercicio">Exercício 2: Rotação de Quadril</h3>
+                        <img src="imgs/rotacao-quadril.gif" alt="GIF de Rotação de Quadril" class="exercise-gif">
+                        <p>Rotacione os quadris para melhorar a mobilidade e aliviar tensões.</p>
+                        <div class="button-container">
+                            <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                            <select class="time-select">
+                                <option value="16">15 segundos</option>
+                                <option value="31" selected>30 segundos</option>
+                                <option value="46">45 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <button class="close-button" onclick="fecharCard(this)">X</button>
+                        <h3 class="exercicio">Contagem Regressiva</h3>
+                        <div class="timer">00:30</div>
+                        <div class="control-buttons">
+                            <button onclick="pausarTempo()">Pausar</button>
+                            <button onclick="pararTempo()">Parar</button>
+                            <button onclick="reiniciarTempo()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Mobilização de Ombros -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="exercise-card flip-card-front">
+                        <h3 class="exercicio">Exercício 3: Mobilização de Ombros</h3>
+                        <img src="imgs/mobilizacao-ombros.gif" alt="GIF de Mobilização de Ombros" class="exercise-gif">
+                        <p>Realize movimentos circulares para aumentar a mobilidade dos ombros.</p>
+                        <div class="button-container">
+                            <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                            <select class="time-select">
+                                <option value="16">15 segundos</option>
+                                <option value="31" selected>30 segundos</option>
+                                <option value="46">45 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <button class="close-button" onclick="fecharCard(this)">X</button>
+                        <h3 class="exercicio">Contagem Regressiva</h3>
+                        <div class="timer">00:30</div>
+                        <div class="control-buttons">
+                            <button onclick="pausarTempo()">Pausar</button>
+                            <button onclick="pararTempo()">Parar</button>
+                            <button onclick="reiniciarTempo()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Flexão de Tornozelos -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="exercise-card flip-card-front">
+                        <h3 class="exercicio">Exercício 4: Flexão de Tornozelos</h3>
+                        <img src="imgs/flexao-tornozelos.gif" alt="GIF de Flexão de Tornozelos" class="exercise-gif">
+                        <p>Flexione os tornozelos para aumentar a mobilidade das articulações.</p>
+                        <div class="button-container">
+                            <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                            <select class="time-select">
+                                <option value="16">15 segundos</option>
+                                <option value="31" selected>30 segundos</option>
+                                <option value="46">45 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <button class="close-button" onclick="fecharCard(this)">X</button>
+                        <h3 class="exercicio">Contagem Regressiva</h3>
+                        <div class="timer">00:30</div>
+                        <div class="control-buttons">
+                            <button onclick="pausarTempo()">Pausar</button>
+                            <button onclick="pararTempo()">Parar</button>
+                            <button onclick="reiniciarTempo()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Mobilização de Coluna Torácica -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="exercise-card flip-card-front">
+                        <h3 class="exercicio">Exercício 5: Mobilização de Coluna Torácica</h3>
+                        <img src="imgs/mobilizacao-coluna.gif" alt="GIF de Mobilização de Coluna Torácica" class="exercise-gif">
+                        <p>Faça movimentos para melhorar a mobilidade da coluna torácica.</p>
+                        <div class="button-container">
+                            <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                            <select class="time-select">
+                                <option value="16">15 segundos</option>
+                                <option value="31" selected>30 segundos</option>
+                                <option value="46">45 segundos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <button class="close-button" onclick="fecharCard(this)">X</button>
+                        <h3 class="exercicio">Contagem Regressiva</h3>
+                        <div class="timer">00:30</div>
+                        <div class="control-buttons">
+                            <button onclick="pausarTempo()">Pausar</button>
+                            <button onclick="pararTempo()">Parar</button>
+                            <button onclick="reiniciarTempo()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/mobilidade.js"></script>
+    <script>
+        function voltarParaHome() {
+            window.location.href = 'index.html';
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            var scrollTopButton = document.querySelector('.scroll-top');
+            if (this.window.pageYOffset > 200) {
+                scrollTopButton.style.display = 'block';
+            } else {
+                scrollTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

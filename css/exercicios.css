@@ -1,0 +1,300 @@
+/* Página de Exercícios */
+.exercise-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho com título e botão de voltar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que o título e o botão quebrem linha em telas pequenas */
+}
+
+p{
+    color: #222;
+}
+
+/* Estilo do temporizador */
+.timer {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #ffa837;
+    font-weight: bold;
+}
+
+/* Estilo do temporizador durante a preparação */
+.timer.preparation {
+    color: #ff4d4d; /* Define a cor vermelha para o tempo de preparação */
+}
+
+/* Estilo dos botões de controle */
+.control-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #1d1149;
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: center;
+    flex: 1; /* Permite que o título ocupe espaço disponível */
+}
+
+/* Botão de voltar */
+.back-button {
+    background-color: #058275;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+}
+
+.back-button i {
+    font-size: 1.2em;
+}
+
+.back-button:hover {
+    background-color: #045f5a;
+    transform: translateY(-3px);
+}
+
+/* Container dos exercícios */
+.exercises-container {
+    display: flex;
+    flex-direction: column;
+    gap: 70px; /* Espaço entre os cards */
+    width: 100%;
+    max-width: 500px; /* Ajuste a largura máxima dos cards */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+
+/* Estilo dos cards de exercícios */
+.exercise-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Título do exercício */
+h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    background-color: #eef2f7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Estilo do GIF de exercício */
+.exercise-gif {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grupo dos botões (Iniciar e Seleção de Tempo) */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px; /* Adiciona espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+}
+
+/* Botão de iniciar exercício */
+.start-exercise {
+    background-color: #069790;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    flex: 1;
+}
+
+.start-exercise:hover {
+    background-color: #047e68;
+    transform: translateY(-3px);
+}
+
+/* Seletor de tempo */
+.time-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    min-width: 130px;
+    flex: 1; /* Ajusta o seletor para ficar proporcional */
+}
+
+.time-select:hover {
+    border-color: #069790;
+}
+
+/* Flip card styles */
+.flip-card {
+    perspective: 1000px;
+    border-radius: 12px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flip .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+}
+
+/* Timer and control buttons styles */
+.timer {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ffa837;
+    font-weight: bold;
+}
+
+.control-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #058275;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.control-buttons button:hover {
+    background-color: #045f5a;
+    transform: translateY(-3px);
+}
+
+/* Botão de fechamento do card */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ff4d4d;
+    transition: transform 0.2s;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade para telas menores (celulares) */
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .exercicio {
+        font-size: 0.8em; /* Reduz um pouco o tamanho do h3 */
+        padding: 8px 16px; /* Ajusta o padding para manter a proporção */
+        top: 20px;
+    }
+
+    .exercise-card {
+        padding: 10px;
+    }
+
+    .timer {
+        font-size: 1.5em;
+    }
+
+    .back-button {
+        padding: 6px 14px;
+        font-size: 0.8em;
+    }
+
+    .start-exercise, .time-select {
+        padding: 6px 12px; /* Ajusta o padding dos botões para telas pequenas */
+        font-size: 0.9em; /* Ajusta o tamanho da fonte dos botões */
+        flex: 1; /* Garante que os botões ocupem o espaço disponível */
+    }
+
+    .control-buttons button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .button-container {
+        flex-direction: column; /* Alinha os botões verticalmente em telas menores */
+        margin-top: -35px;
+        gap: 8px; /* Reduz o espaçamento entre os botões */
+        align-items: stretch; /* Garante que os botões ocupem toda a largura disponível */
+    }
+}
