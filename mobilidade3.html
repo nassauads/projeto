@@ -30,7 +30,7 @@
                             <img src="exercicio/Design sem nome (11).jpg" alt="GIF de Alongamento Intensivo de Pernas" class="exercise-gif">
                             <p>Exercício avançado para melhorar a flexibilidade e a mobilidade das pernas.</p>
                             <div class="button-container">
-                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <button class="start-exercise" onclick="iniciarExercicio(this); adicionarComandoVozNoExercicio(this);">Iniciar</button>
                                 <select class="time-select">
                                     <option value="16">15 segundos</option>
                                     <option value="31" selected>30 segundos</option>
@@ -60,7 +60,7 @@
                             <img src="exercicio/Design sem nome (12).jpg" alt="GIF de Rotação Profunda de Quadril" class="exercise-gif">
                             <p>Exercício intensivo para aumentar a mobilidade do quadril e aliviar tensões críticas.</p>
                             <div class="button-container">
-                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <button class="start-exercise" onclick="iniciarExercicio(this); adicionarComandoVozNoExercicio(this);">Iniciar</button>
                                 <select class="time-select">
                                     <option value="16">15 segundos</option>
                                     <option value="31" selected>30 segundos</option>
@@ -90,7 +90,7 @@
                             <img src="exercicio/Design sem nome (13).jpg" alt="GIF de Flexão Avançada de Ombros" class="exercise-gif">
                             <p>Exercício crítico para melhorar a mobilidade dos ombros com flexão profunda.</p>
                             <div class="button-container">
-                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <button class="start-exercise" onclick="iniciarExercicio(this); adicionarComandoVozNoExercicio(this);">Iniciar</button>
                                 <select class="time-select">
                                     <option value="16">15 segundos</option>
                                     <option value="31" selected>30 segundos</option>
@@ -119,6 +119,7 @@
     </button>
 
     <script src="js/mobilidade.js"></script>
+    <script src="js/comandoVoz.js"></script>
     <script>
         function voltarParaHome() {
             window.location.href = 'index.html';
