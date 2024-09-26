@@ -46,6 +46,7 @@ header h1 {
     gap: 150px;
     padding: 20px;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 /* Estilo dos cards */
