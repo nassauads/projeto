@@ -193,11 +193,16 @@ img{
     }
 
     .exercises-container {
-        gap: 140px;
+        gap: 180px;
+        margin-top: 60px;
     }
     .button-container, .control-buttons {
         display: flex;
         gap: 10px;
         margin-top: -20px;
+    }
+    .flip-cards-front, .flip-cards-back {
+        width: 100%;
+        height: 180%;
     }
 }
