@@ -43,15 +43,18 @@ header h1 {
 .exercises-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 150px;
     padding: 20px;
     justify-content: center;
 }
 
 /* Estilo dos cards */
+
 .flip-card {
-    width: 300px;
-    perspective: 1000px;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Remove distortions */
 }
 
 .flip-card-inner {
@@ -60,30 +63,49 @@ header h1 {
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    transform-origin: center center; /* Mantém o card no centro ao girar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.flip-card-front, .flip-card-back {
+
+.flip-cards-front, .flip-cards-back {
     position: absolute;
     width: 100%;
+    height: 140%;
     backface-visibility: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    margin-top: 60px;
     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 
-.flip-card-front {
+.flip-cards-front {
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.flip-card-back {
+.flip-cards-back {
+    background-color: rgba(0, 0, 0, 0.8);
     transform: rotateY(180deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 
 /* Estilo do conteúdo do card */
 .exercise-card h3 {
@@ -147,6 +169,11 @@ header h1 {
     color: #007bff;
 }
 
+img{
+    width: 45%;
+    height: auto;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .exercises-container {
@@ -163,5 +190,9 @@ header h1 {
 
     header h1 {
         font-size: 1.2rem;
+    }
+
+    .exercises-container {
+        gap: 140px;
     }
 }
