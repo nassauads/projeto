@@ -231,6 +231,10 @@ img {
         font-size: 1.2rem;
     }
 
+    .exercise-card p{
+        margin-top: -30px;
+    }
+
     .exercises-container {
         gap: 280px;
         margin-top: 110px;
