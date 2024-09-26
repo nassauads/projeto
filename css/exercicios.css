@@ -46,7 +46,6 @@ header h1 {
     gap: 150px;
     padding: 20px;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 /* Estilo dos cards */
@@ -117,13 +116,12 @@ header h1 {
     color: #555;
 }
 
-/* Botões de controle */
+/* Botões de controle - Estilo da pilha */
 .button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .start-exercise {
@@ -133,8 +131,8 @@ header h1 {
     cursor: pointer;
     background-color: #28a745;
     color: #fff;
-    width: 100%;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 .start-exercise:hover {
@@ -149,9 +147,31 @@ header h1 {
     width: 100%;
 }
 
+/* Estilo dos botões de controle - em fila */
+.control-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.control-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-buttons button:hover {
+    background-color: #444;
+}
+
 /* Estilo do timer */
 .timer {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
     margin: 20px 0;
