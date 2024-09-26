@@ -212,6 +212,37 @@ img {
     box-shadow: none;
 }
 
+.mensagem-temporaria {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 145, 20, 0.979);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    z-index: 100; /* Certifica-se de que está acima de outros elementos */
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .exercises-container {
@@ -256,5 +287,10 @@ img {
 
     .scroll-top{
         font-size: 14px;
+    }
+    .mensagem-temporaria {
+        top: -10%;
+        left: 50%;
+
     }
 }

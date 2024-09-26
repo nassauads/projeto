@@ -59,10 +59,27 @@ function startTimer(card) {
             updateTimerDisplay(card);
         } else if (timeLeft <= 0) {
             clearInterval(interval);
-            alert("Tempo esgotado!");
+            mostrarMensagemTemporaria(card, "Tempo esgotado!");
         }
     }, 1000);
 }
+
+// Função para mostrar uma mensagem temporária no card
+function mostrarMensagemTemporaria(card, mensagem) {
+    // Cria um elemento de mensagem
+    const mensagemElemento = document.createElement('div');
+    mensagemElemento.classList.add('mensagem-temporaria');
+    mensagemElemento.textContent = mensagem;
+
+    // Adiciona a mensagem temporária ao card
+    card.appendChild(mensagemElemento);
+
+    // Remove a mensagem após 3 segundos
+    setTimeout(() => {
+        mensagemElemento.remove();
+    }, 3000);
+}
+
 
 // Função para pausar o temporizador
 function pausarTempo() {
