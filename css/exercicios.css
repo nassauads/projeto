@@ -170,7 +170,7 @@ header h1 {
 }
 
 img{
-    width: 45%;
+    width: 50%;
     height: auto;
 }
 
@@ -194,5 +194,10 @@ img{
 
     .exercises-container {
         gap: 140px;
+    }
+    .button-container, .control-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: -20px;
     }
 }
