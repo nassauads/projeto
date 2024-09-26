@@ -22,17 +22,17 @@ header {
 header h1 {
     margin: 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #1d1149;
 }
 
 .back-button {
     border: none;
     background: none;
     font-size: 1rem;
-    color: #007bff;
+    color: #058275;
     cursor: pointer;
     display: flex;
-    align-items: center center;
+    align-items: center;
 }
 
 .back-button i {
@@ -49,12 +49,11 @@ header h1 {
 }
 
 /* Estilo dos cards */
-
 .flip-card {
     background-color: transparent;
     width: 100%;
     height: 200px;
-    perspective: 1000px; /* Remove distortions */
+    perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -63,12 +62,11 @@ header h1 {
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    transform-origin: center center; /* Mantém o card no centro ao girar */
+    transform-origin: center center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .flip-cards-front, .flip-cards-back {
     position: absolute;
@@ -91,7 +89,6 @@ header h1 {
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,12 +103,11 @@ header h1 {
     justify-content: space-between;
 }
 
-
 /* Estilo do conteúdo do card */
 .exercise-card h3 {
     font-size: 1.2rem;
     margin: 0;
-    color: #333;
+    color: #1d1149;
 }
 
 .exercise-card p {
@@ -121,55 +117,47 @@ header h1 {
 }
 
 /* Botões de controle */
-.button-container, .control-buttons {
+.button-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
-.start-exercise, .close-button, .control-buttons button {
+.start-exercise {
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.start-exercise {
     background-color: #28a745;
     color: #fff;
-}
-
-.close-button, .control-buttons button {
-    background-color: #dc3545;
-    color: #fff;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 .start-exercise:hover {
     background-color: #218838;
 }
 
-.close-button:hover, .control-buttons button:hover {
-    background-color: #c82333;
-}
-
-/* Select de tempo */
 .time-select {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 /* Estilo do timer */
 .timer {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
     margin: 20px 0;
-    color: #007bff;
+    color: #2be2cf;
 }
 
-img{
+img {
     width: 50%;
     height: auto;
 }
@@ -184,7 +172,7 @@ img{
         width: 80%;
     }
 
-    header{
+    header {
         margin-top: 20px;
     }
 
@@ -196,11 +184,7 @@ img{
         gap: 180px;
         margin-top: 60px;
     }
-    .button-container, .control-buttons {
-        display: flex;
-        gap: 10px;
-        margin-top: -20px;
-    }
+
     .flip-cards-front, .flip-cards-back {
         width: 100%;
         height: 180%;
