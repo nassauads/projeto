@@ -89,7 +89,7 @@ function reiniciarTempo() {
 // Atualiza a exibição do temporizador do exercício
 function updateTimerDisplay(card) {
     const timerDisplay = card.querySelector('.timer');
-    timerDisplay.textContent = `00:${timeLeft < 10 ? '0' : ''}${timeLeft}`;
+    timerDisplay.textContent = `Tempo: 00:${timeLeft < 10 ? '0' : ''}${timeLeft}`;
 }
 
 // Função para fechar o card e parar o temporizador
