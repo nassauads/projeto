@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilidade Média - VidaFlex</title>
+    <link rel="stylesheet" href="css/exercicios.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando Font Awesome para ícones -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="exercise-page">
+            <header>
+                <button class="back-button" onclick="voltarParaHome()">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+                <h1>Mobilidade Média</h1>
+            </header>
+            <div class="exercises-container">
+                <!-- Card 1: Exercício de Mobilidade Média 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="exercise-card flip-cards-front">
+                            <h3 class="exercicio">Exercício 1: Mobilidade de Joelho</h3>
+                            <img src="exercicio/Design sem nome (5).jpg" alt="GIF de Mobilidade de Joelho" class="exercise-gif">
+                            <p>Exercício para melhorar a mobilidade do joelho.</p>
+                            <div class="button-container">
+                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <select class="time-select">
+                                    <option value="16">15 segundos</option>
+                                    <option value="31" selected>30 segundos</option>
+                                    <option value="46">45 segundos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flip-cards-back">
+                            <button class="close-button" onclick="fecharCard(this)">X</button>
+                            <h3 class="exercicio">Contagem Regressiva</h3>
+                            <div class="timer">00:30</div>
+                            <div class="control-buttons">
+                                <button onclick="pausarTempo()">Pausar</button>
+                                <button onclick="pararTempo()">Parar</button>
+                                <button onclick="reiniciarTempo()">Reiniciar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Exercício de Mobilidade Média 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="exercise-card flip-cards-front">
+                            <h3 class="exercicio">Exercício 2: Mobilização de Cotovelo</h3>
+                            <img src="exercicio/Design sem nome (6).jpg" alt="GIF de Mobilização de Cotovelo" class="exercise-gif">
+                            <p>Exercício para aumentar a mobilidade do cotovelo.</p>
+                            <div class="button-container">
+                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <select class="time-select">
+                                    <option value="16">15 segundos</option>
+                                    <option value="31" selected>30 segundos</option>
+                                    <option value="46">45 segundos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flip-cards-back">
+                            <button class="close-button" onclick="fecharCard(this)">X</button>
+                            <h3 class="exercicio">Contagem Regressiva</h3>
+                            <div class="timer">00:30</div>
+                            <div class="control-buttons">
+                                <button onclick="pausarTempo()">Pausar</button>
+                                <button onclick="pararTempo()">Parar</button>
+                                <button onclick="reiniciarTempo()">Reiniciar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Exercício de Mobilidade Média 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="exercise-card flip-cards-front">
+                            <h3 class="exercicio">Exercício 3: Mobilidade de Tornozelo</h3>
+                            <img src="exercicio/Design sem nome (10).jpg" alt="GIF de Mobilidade de Tornozelo" class="exercise-gif">
+                            <p>Exercício para melhorar a flexibilidade do tornozelo.</p>
+                            <div class="button-container">
+                                <button class="start-exercise" onclick="iniciarExercicio(this)">Iniciar</button>
+                                <select class="time-select">
+                                    <option value="16">15 segundos</option>
+                                    <option value="31" selected>30 segundos</option>
+                                    <option value="46">45 segundos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flip-cards-back">
+                            <button class="close-button" onclick="fecharCard(this)">X</button>
+                            <h3 class="exercicio">Contagem Regressiva</h3>
+                            <div class="timer">00:30</div>
+                            <div class="control-buttons">
+                                <button onclick="pausarTempo()">Pausar</button>
+                                <button onclick="pararTempo()">Parar</button>
+                                <button onclick="reiniciarTempo()">Reiniciar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mobilidade.js"></script>
+    <script>
+        function voltarParaHome() {
+            window.location.href = 'index.html';
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            var scrollTopButton = document.querySelector('.scroll-top');
+            if (this.window.pageYOffset > 200) {
+                scrollTopButton.style.display = 'block';
+            } else {
+                scrollTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
