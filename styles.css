@@ -356,7 +356,7 @@ button:hover {
     }
 
     .login-button {
-        top: 40%;
+        top: 38%;
         right: 15px; /* Ajusta a posição para dispositivos muito pequenos */
         padding: 8.5px; /* Reduz ainda mais o tamanho do botão */
     }
