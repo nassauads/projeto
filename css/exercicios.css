@@ -73,6 +73,10 @@ header h1 {
     align-items: center;
 }
 
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
 .flip-cards-front, .flip-cards-back {
     position: absolute;
     width: 100%;
