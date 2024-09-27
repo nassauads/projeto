@@ -68,15 +68,15 @@ body {
 }
 
 #card-boo {
-    background-image: url('/imgs/mobilidade1.jpg'); /* Caminho ajustado */
+    background-image: url('imgs/mobilidade1.jpg'); /* Caminho ajustado */
 }
 
 #card-media {
-    background-image: url('/imgs/mobilidade2.jpg'); /* Caminho ajustado */
+    background-image: url('imgs/mobilidade2.jpg'); /* Caminho ajustado */
 }
 
 #card-critica {
-    background-image: url('/imgs/mobilidade3.jpg'); /* Caminho ajustado */
+    background-image: url('imgs/mobilidade3.jpg'); /* Caminho ajustado */
 }
 
 .flip-card-back {
