@@ -51,12 +51,41 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 2: Exercício de Mobilidade Média 2 -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="exercise-card flip-cards-front">
-                            <h3 class="exercicio">Exercício 2: Mobilização de Cotovelo</h3>
+                            <h3 class="exercicio">Exercício 2: Alongamento de Flexão para a Frente</h3>
+                            <img src="exercicio-imgs/Alongamento de Flexão para a Frente.jpg" alt="GIF de Alongamento de Flexão para a Frente" class="exercise-gif">
+                            <p>Incline-se para a frente, tentando tocar os dedos dos pés. Mantenha as pernas retas.</p>
+                            <div class="button-container">
+                                <button class="start-exercise" onclick="iniciarExercicio(this); adicionarComandoVozNoExercicio(this);">Iniciar</button>
+                                <select class="time-select">
+                                    <option value="16">15 segundos</option>
+                                    <option value="31" selected>30 segundos</option>
+                                    <option value="46">45 segundos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flip-cards-back">
+                            <button class="close-button" onclick="fecharCard(this)">X</button>
+                            <img src="exercicio-imgs/Alongamento de Flexão para a Frente.jpg" alt="GIF de Alongamento de Flexão para a Frente" class="exercise-gif" style="border-radius: 20px;">
+                            <p>Contagem Regressiva:</p>
+                            <div class="timer">00:30</div>
+                            <div class="control-buttons">
+                                <button onclick="pausarTempo()">Pausar</button>
+                                <button onclick="pararTempo()">Parar</button>
+                                <button onclick="reiniciarTempo()">Reiniciar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Exercício de Mobilidade Média 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="exercise-card flip-cards-front">
+                            <h3 class="exercicio">Exercício 3: Mobilização de Cotovelo</h3>
                             <img src="exercicio-imgs/Mobilização de Cotovelo.jpg" alt="GIF de Mobilização de Cotovelo" class="exercise-gif">
                             <p>Exercício para aumentar a mobilidade do cotovelo.</p>
                             <div class="button-container">
@@ -82,11 +111,11 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Exercício de Mobilidade Média 3 -->
+                <!-- Card 4: Exercício de Mobilidade Média 4 -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="exercise-card flip-cards-front">
-                            <h3 class="exercicio">Exercício 3: Mobilidade de Tornozelo</h3>
+                            <h3 class="exercicio">Exercício 4: Mobilidade de Tornozelo</h3>
                             <img src="exercicio-imgs/Mobilidade de Tornozelo.jpg" alt="GIF de Mobilidade de Tornozelo" class="exercise-gif">
                             <p>Exercício para melhorar a flexibilidade do tornozelo.</p>
                             <div class="button-container">
@@ -111,11 +140,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 4: Exercício de Mobilidade Média 2 -->
+                <!-- Card 5: Exercício de Mobilidade Média 5 -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="exercise-card flip-cards-front">
-                            <h3 class="exercicio">Exercício 4: Passada Lateral com Banda Elástica</h3>
+                            <h3 class="exercicio">Exercício 5: Passada Lateral com Banda Elástica</h3>
                             <img src="exercicio-imgs/Passada Lateral.jpg" alt="GIF de Passada Lateral" class="exercise-gif">
                             <p>Dê passos laterais, mantendo a banda elástica esticada. Mantenha os joelhos levemente flexionados e o tronco firme.</p>
                             <div class="button-container">
